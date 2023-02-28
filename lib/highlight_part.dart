@@ -10,14 +10,29 @@ class HighlightPart extends StatelessWidget {
       height: 140,
       width: double.infinity,
       child: ListView(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         scrollDirection: Axis.horizontal,
         children: [
           listItem('assets/model1.jpeg', 'assets/chanellogo.jpg'),
+          const SizedBox(
+            width: 10,
+          ),
           listItem('assets/model2.jpeg', 'assets/chloelogo.png'),
+          const SizedBox(
+            width: 20,
+          ),
           listItem('assets/model3.jpeg', 'assets/dress.jpg'),
+          const SizedBox(
+            width: 20,
+          ),
           listItem('assets/model1.jpeg', 'assets/louisvuitton.jpg'),
+          const SizedBox(
+            width: 20,
+          ),
           listItem('assets/model2.jpeg', 'assets/chloelogo.png'),
+          const SizedBox(
+            width: 20,
+          ),
           listItem('assets/model3.jpeg', 'assets/chanellogo.jpg'),
         ],
       ),
@@ -51,7 +66,7 @@ class HighlightPart extends StatelessWidget {
             ),
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Container(
@@ -59,7 +74,7 @@ class HighlightPart extends StatelessWidget {
           width: 75,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15), color: Colors.brown),
-          child: Center(
+          child: const Center(
             child: Text("Follow",
                 style: TextStyle(
                     fontFamily: 'Montserrat',
