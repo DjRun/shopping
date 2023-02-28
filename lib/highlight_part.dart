@@ -5,7 +5,7 @@ class HighlightPart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       // color: Colors.blue.shade300,
       height: 140,
       width: double.infinity,

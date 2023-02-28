@@ -37,7 +37,7 @@ class CardBottom extends StatelessWidget {
         const SizedBox(
           width: 15,
         ),
-        Container(
+        SizedBox(
           width: MediaQuery.of(context).size.width - 230,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.end,
