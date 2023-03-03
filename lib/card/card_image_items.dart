@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:shopping/card/card_more.dart';
+import 'package:shopping/card/card_more/card_more.dart';
 
 class CardMidImages extends StatelessWidget {
   const CardMidImages({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Row(
