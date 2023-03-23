@@ -43,12 +43,25 @@ class _CardMoreState extends State<CardMore> {
                   const CardMoreDetails(),
                   const Divider(),
                   Row(
-                    children: const [
-                      Text(
-                        '6000\$',
-                        style: TextStyle(
-                          fontFamily: 'Montserrat',
-                          fontSize: 22,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Container(
+                        margin: const EdgeInsets.only(left: 30),
+                        child: const Text(
+                          '6000\$',
+                          style: TextStyle(
+                            fontFamily: 'Montserrat',
+                            fontSize: 22,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(right: 30),
+                        child: FloatingActionButton(
+                          onPressed: () {},
+                          backgroundColor: Colors.brown,
+                          child: const Center(
+                              child: Icon(Icons.arrow_forward_ios)),
                         ),
                       )
                     ],
@@ -57,7 +70,36 @@ class _CardMoreState extends State<CardMore> {
               ),
             ),
           ),
-        )
+        ),
+        Positioned(
+            top: MediaQuery.of(context).size.height / 2,
+            left: 50,
+            child: Container(
+              height: 40,
+              width: 130,
+              decoration: BoxDecoration(
+                  color: Colors.black.withOpacity(0.4),
+                  borderRadius: BorderRadius.circular(8)),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: const [
+                  Center(
+                    child: Text(
+                      'LAMINATED',
+                      style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ),
+                  Icon(
+                    Icons.arrow_forward_ios,
+                    color: Colors.white,
+                    size: 18,
+                  )
+                ],
+              ),
+            ))
       ]),
     );
   }
